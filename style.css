@@ -1,0 +1,51 @@
+body{
+    padding: 10px;
+     font-family: "Merriweather", serif;
+     margin-bottom: 50px;
+}
+.logo{
+    width: 50px;
+}
+.nav-icon{
+
+ height: 30px;
+ width: 30px;
+margin-left: 5px;
+margin-top: 5px;
+}
+.profile-pic{
+   width: 50px;
+   border-radius: 50%;
+}
+.profile-border{
+    border-radius: 50%;
+   
+}
+.nav-icon-two{
+background-color: rgb(182, 181, 181);
+border-radius: 50%;
+ height: 40px;
+ width: 40px;
+
+}
+ul{
+  
+    list-style-type: none;
+}
+.topimages{
+width: 30px;
+ border-radius: 5px;
+}
+
+.card-img-top{
+    width: 100px;
+    height: 180px;
+}
+
+
+@media (max-width:450px) {
+    .right-section,.left-section{
+        display: none;
+    }
+  
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfbcYeYgf0wQJ-LSPm3CPbyB7T1p0f5bnaA&s" alt="">
+      </a>
+      <form class="d-flex me-auto mb-2 mb-lg-0" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search Facebook" aria-label="Search"/>
+        
+      </form>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+</svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16">
+  <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z"/>
+  <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"/>
+</svg></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+  <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+</svg></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+  <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8z"/>
+</svg></a>
+        </li>
+
+
+      </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        <li class="nav-item">
+          <a class="nav-link " aria-disabled="true">
+            <div class="profile-border">
+ <img class="profile-pic" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/702.png" alt="">
+</div>
+
+           
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ">
+         
+<p>Dedenne</p>
+           
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " >
+            <div class="nav-icon-two">
+
+           
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+</svg>
+ </div>
+         
+
+           
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ">
+            <div class="nav-icon-two">
+
+           
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+  <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg>
+        </div>  
+
+           
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " >
+            <div class="nav-icon-two">
+
+         
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+</svg>
+            </div>
+
+           
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " >
+            <div class="nav-icon-two">
+
+           
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg>
+          </div>
+
+           
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="container ">
+  <div class="row">
+    <div class="col-3 left-section">
+   <ul class="list-group d-flex justify-content-start">
+  <li class="list-group-item">
+    <svg
+    style="color: rgb(0, 68, 255);" 
+     xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+  <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437"/>
+</svg> &nbsp; Watch
+  </li>
+  <li class="list-group-item">
+    <svg
+    style="color: rgb(0, 68, 255);"
+    xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+</svg> &nbsp; Events
+</li>
+  <li class="list-group-item">
+    <svg
+    style="color: blue;"
+     xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg> &nbsp; Friends
+</li>
+  <li class="list-group-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+  <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+  <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+  <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+</svg> &nbsp; Memories
+  </li>
+  <li class="list-group-item">
+<svg
+style="color: gray;"
+ xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+</svg> &nbsp; See More
+  </li>
+  <hr>
+  <li class="list-group-item text-muted">
+Shortcuts
+  </li>
+  <li class="list-group-item">
+    <img class="topimages" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/63/f8/bb/big-ben.jpg?w=1200&h=1200&s=1&pcx=1033&pcy=310&pchk=v1_bf93e1170e1f1f8d4cea" alt=""> &nbsp; Best trips to Europe
+  </li>
+  <li class="list-group-item">
+    <img class="topimages" src="https://browneyedflowerchild.com/wp-content/uploads/bb-plugin/cache/Taylor-Sleepy-Hollow-square-d5cecf59a4d09b92c786a0464a934299-5c401ef534e95.jpg" alt=""> &nbsp; Weekend Trips
+  </li>
+  <li class="list-group-item">
+    <img class="topimages" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSK3-lRgUz94n5Pmrfl2klOFm169-D9oBGmA&s" alt=""> &nbsp; Jasper's Market
+  </li>
+  <li class="list-group-item">
+    <img class="topimages" src="https://static01.nyt.com/images/2021/06/22/arts/21FOOFIGHTERS05/21FOOFIGHTERS05-mediumSquareAt3X.jpg" 
+    alt=""> &nbsp; Best Concerts
+  </li>
+  <li class="list-group-item">
+    <img class="topimages" src="https://33andfree.live/wp-content/uploads/2024/07/image_editor_output_image1485133406-1720722753078632994778874497442.jpg?w=1024" 
+    alt=""> &nbsp; Best Hiking Trails
+  </li>
+  
+
+
+</ul>
+        
+    </div>
+    <div class="col-12 col-md-6 ">
+  <!-- <div class="card-group container profiles">
+  <div class="card col-6 col-md-4 col-lg-2" style="width: 6.5rem;">
+    <img src="https://images.squarespace-cdn.com/content/v1/60134aebbccd7d008addf6e9/1629620549882-KNMFWWK5E43Q0PT9ZUKK/Jazz+poses+with+flower.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="card-text">Dedenne</h6>
+    
+    </div>
+  </div>
+  <div class="card col-6 col-md-4 col-lg-2" style="width: 6.5rem;">
+    <img src="https://previews.123rf.com/images/niserin/niserin1905/niserin190500058/123620429-handsome-man-taking-selfie-on-the-phone-white-wall-background.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="card-title">Tom Russo</h6>
+      
+    </div>
+  </div>
+  <div class="card col-6 col-md-4 col-lg-2" style="max-width: 6.5rem;">
+    <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,q_auto,w_720/6703ec40f84854001d5b936e.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ben Allison</h5>
+
+    </div>
+  </div>
+  <div class="card col-6 col-md-4 col-lg-2" style="width: 6.5rem;">
+    <img src="https://pbs.twimg.com/media/EtWMjrFVIAAUm0V.jpg:large" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sarah D. </h5>
+
+    </div>
+  </div>
+  <div class="card col-6 col-md-4 col-lg-2" style="width: 6.5rem;">
+    <img src="https://cdn.shopify.com/s/files/1/0807/7897/files/how-to-take-the-perfect-selfie-1_large.jpg?v=1528781921" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Julie Grace</h5>
+
+    </div>
+  </div>
+
+
+
+
+</div> -->
+
+<div class="container profiles mt-3">
+  <div class="row g-2">
+    <!-- Card 1 -->
+    <div class="col-4 col-lg">
+      <div class="card h-100">
+        <img src="https://images.squarespace-cdn.com/content/v1/60134aebbccd7d008addf6e9/1629620549882-KNMFWWK5E43Q0PT9ZUKK/Jazz+poses+with+flower.jpg" class="card-img-top" alt="...">
+        <div class="card-body p-2">
+          <h6 class="card-text">Dedenne</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-lg">
+      <div class="card h-100">
+        <img src="https://previews.123rf.com/images/niserin/niserin1905/niserin190500058/123620429-handsome-man-taking-selfie-on-the-phone-white-wall-background.jpg" class="card-img-top" alt="...">
+        <div class="card-body p-2">
+          <h6 class="card-text">Tom Russo</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-lg">
+      <div class="card h-100">
+        <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,q_auto,w_720/6703ec40f84854001d5b936e.png" class="card-img-top" alt="...">
+        <div class="card-body p-2">
+          <h6 class="card-text">Ben Allison</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-lg">
+      <div class="card h-100">
+        <img src="https://pbs.twimg.com/media/EtWMjrFVIAAUm0V.jpg:large" class="card-img-top" alt="...">
+        <div class="card-body p-2">
+          <h6 class="card-text">Sarah D.</h6>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+    </div>
+<!-- Post -->
+ <div class="card" style="width: 100%;">
+
+  <div class="card-body">
+ 
+    <p class="card-text">
+       <form class="d-flex me-auto mb-2 mb-lg-0" role="search">
+        <input class="form-control me-2" type="search" placeholder="What's on your mind, Dedenne?" aria-label="Search"/>
+        
+      </form>
+    </p>
+  </div>
+ 
+  <div class="card-body">
+   <div class="d-flex flex-row mb-3 justify-content-evenly">
+  <div class="p-2"><svg style="color: rgb(248, 73, 73);"
+    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"/>
+</svg> &nbsp; Live</div>
+  <div class="p-2"><svg style="color: rgb(77, 136, 77);"
+     xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-image" viewBox="0 0 16 16">
+  <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z"/>
+</svg> &nbsp; Photo/Video</div>
+  <div class="p-2"><svg style="color: rgb(184, 184, 6);"
+     xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M12.331 9.5a1 1 0 0 1 0 1A5 5 0 0 1 8 13a5 5 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5"/>
+</svg> &nbsp; Feeling/Activity</div>
+</div>
+  </div>
+</div>
+<!-- Feed -->
+<div class="card" style="width: 24rem;">
+  <div class="card-body">
+    <h5 class="card-title">
+      <div class="">
+ <img class="profile-pic" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/702.png" alt="">  &nbsp; Dedenne
+</div>
+    <p class="card-text text-muted">5 hrs - <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg></p>
+<p>Best fireworks show I've ever seen!</p>
+<img width="350px" src="https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2021/10/fireworks-display-nye.jpeg" alt="">
+  </div>
+  
+ 
+  <div class="card-body justify-content-evenly d-flex">
+    <a href="#" class="card-link"><svg style="color: red;"
+       xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+</svg>Like</a>
+    <a href="#" class="card-link"><svg style="color:57c1e0 ;"
+       xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/> 
+</svg> Comment</a>
+    <a href="#" class="card-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+</svg> Share</a>
+  </div>
+</div>
+<!-- post 2  -->
+<div class="card" style="width: 24rem;">
+  <div class="card-body">
+    <h5 class="card-title">
+      <div class="">
+ <img class="profile-pic" src="https://lh3.googleusercontent.com/_m_LaMpWc_EOEiJjy0YQFSEl4_cu9IHBnUOdBgPPw-_ms9uJ72VoRb1FGifWWYHF0FAX6AGncm9l6zBk-cQ4uMXVtd8IsvBNdeWJt2c=rw-e365-w842-v1" alt="">  &nbsp; John Doe
+</div>
+    <p class="card-text text-muted">7 days - <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg></p>
+<p> 😋😋😋</p>
+<img width="350px" src="https://www.poshpescatarian.com/wp-content/uploads/2022/01/batchsalmonsushi001jpg_2021-02-25-10-35-44.jpeg.webp" alt="">
+  </div>
+  
+ 
+  <div class="card-body justify-content-evenly d-flex">
+    <a href="#" class="card-link"><svg style="color: red;"
+       xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+</svg>Like</a>
+    <a href="#" class="card-link"><svg style="color:57c1e0 ;"
+       xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/> 
+</svg> Comment</a>
+    <a href="#" class="card-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+</svg> Share</a>
+  </div>
+</div>
+    </div>
+
+
+
+<!-- Right section -->
+
+    <div class="col-3 right-section">
+      <div class="card" style="width: 20rem;">
+  
+  <div class="card-body">
+    <h2 class="card-title"><svg style="color: #57c1e0;"
+       xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+</svg></h2>Watch <br>
+<img src="https://i.ytimg.com/vi/WzDmoTydaEk/maxresdefault.jpg" width="200px" alt="...">
+    <p class="card-text">
+      <b>How to Make YouTube Thumbnails</b>
+    </p>
+  </div>
+  <!-- <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul> -->
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<br>
+
+<div class="card mb-3" style="width: 20rem;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://i.pinimg.com/736x/d0/ed/0b/d0ed0b24cb4f998a2881af0afd5190fa.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Prescription Glasses delivered in DAYS not Weeks </h5>
+       
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
